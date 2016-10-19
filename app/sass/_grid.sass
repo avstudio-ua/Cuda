@@ -1,0 +1,30 @@
+*
+	box-sizing: border-box
+.container
+	width: 940px
+	margin: 0 auto
+
+.row
+	margin-bottom: 20px
+.row:after
+	display: block
+	content: "."
+	height: 0
+	visibility: hidden
+	clear: both
+[class*="span"]
+	float: left
+	display: inline
+	margin-right: 20px
+
+[class*="span"]:last-child
+	margin-right: 0
+	float: right
+
+@for $i from 1 through 12
+	.span#{$i}
+		width: #{60+80*(($i)-1)}px
+
+@for $i from 1 through 12
+	.offset#{$i}
+		margin-left: #{60+80*(($i)-1)}px
