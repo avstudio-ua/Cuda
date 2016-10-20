@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="css/main.css">
 	<title>Cuda</title>
 </head>
 <body>
 	<header>
 		<div class="wrap">
 		<div class="logo"><img src="img/logo.png" alt="Cuda"></div>
-		<link rel="stylesheet" href="css/style.css">
 		<nav>
-			<ul>
+		<div class="menu"></div>
+			<ul class="hiden">
 				<li><a href="#home">home</a></li>
-				<li><a href="">about</a></li>
-				<li><a href="">work</a></li>
-				<li><a href="">blog</a></li>
-				<li><a href="">contact</a></li>
+				<li><a href="#services">about</a></li>
+				<li><a href="#team">team</a></li>
+				<li><a href="#skills">our skills</a></li>
+				<li><a href="#portfolio">portfolio</a></li>
+				<li><a href="#contact">contact</a></li>
 			</ul>
 		</nav>
 		</div>
@@ -122,10 +124,10 @@
 			<li>apps</li>
 			<li>icons</li>
 		</ul>
-		<div class="works"><div></div><span>Isometric Perspective Mock-Up</span></div>
-		<div class="works"><div></div><span>Time Zone App UI</span></div>
-		<div class="works"><div></div><span>Viro Media Players UI</span></div>
-		<div class="works"><div></div><span>Blog / Magazine Flat UI Kit</span></div>
+		<div class="works"><img src="img/portfolio1.png" alt="portfolio"><span>Isometric Perspective Mock-Up</span></div>
+		<div class="works"><img src="img/portfolio2.png" alt="portfolio"><span>Time Zone App UI</span></div>
+		<div class="works"><img src="img/portfolio3.png" alt="portfolio"><span>Viro Media Players UI</span></div>
+		<div class="works"><img src="img/portfolio4.png" alt="portfolio"><span>Blog / Magazine Flat UI Kit</span></div>
 		<button>load more projects</button>
 	</div>
 	<div class="content" id="fback">
@@ -160,9 +162,9 @@
 		<h1>get in touch</h1>
 		<span>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</span>
 		<form action="">
-			<input type="text">
-			<input type="email">
-			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<input type="text" placeholder="YourName">
+			<input type="email" placeholder="YourEmail">
+			<textarea name="" id="" cols="30" rows="10" placeholder="YourMessage"></textarea>
 			<button>send message</button>
 		</form>
 	</div>
@@ -177,5 +179,7 @@
 			<li><a href="">gitHub</a></li>
 		</ul>
 	</footer>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

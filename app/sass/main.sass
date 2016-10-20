@@ -11,13 +11,16 @@ header
 	position: absolute
 	width: 100%
 	.wrap
-		width: 960px
+		max-width: 960px
+		width: 100%
 		margin: auto
 		margin-top: 50px
 	.logo
 		display: inline-block
+		margin: 0 20px
 	nav
 		float: right
+		margin: 0 20px
 	ul
 		margin: 0
 		padding: 0
@@ -26,9 +29,11 @@ header
 	li
 		display: inline-block
 	a
+		display: inline-block
 		font-size: 1.2rem
 		color: #fff
-		padding: 10px
+		line-height: 47px
+		padding: 0 10px
 		text-transform: uppercase
 		text-decoration: none
 		transition: all .3s
@@ -40,6 +45,7 @@ header
 	color: #fff
 	min-height: 100vh
 	padding-top: 100px
+	padding-bottom: 60px
 	text-align: center
 h1
 	width: 100%
@@ -145,7 +151,7 @@ button
 	color: #3c4761
 .skills-wrap
 	display: inline-block
-	margin: 80px 20px
+	margin: 20px
 	span
 		display: block
 		text-transform: uppercase
@@ -165,7 +171,6 @@ button
 #portfolio
 	background: #ffdd99
 	color: #393939
-	padding-bottom: 60px
 	ul
 		display: block
 		margin: 20px auto
@@ -191,22 +196,18 @@ button
 	span
 		text-transform: uppercase
 		font-size: 1.3rem
-	div
-		background: url(../img/portfolio.png)
-		width: 534px
-		height: 330px
-		margin-bottom: 20px
-@for $i from 5 to 8
-	.works:nth-child(#{$i}) div
-		background-position: -#{537*(($i)-4)}px
+		display: block
+	img
+		width: 100%
 #fback
 	background: #d74680
 .fback
 	display: inline-block
 	max-width: 400px
-	width: 100%
-	margin: 30px
+	width: 85%
+	margin: 25px
 	p
+		display: block
 		text-align: left
 		font-style: italic
 	.img
@@ -215,7 +216,7 @@ button
 		float: left
 		width: 75px
 		height: 75px
-		margin: 10px 30px
+		margin: 10px
 	.name
 		color: #fff
 		text-align: left
@@ -229,12 +230,14 @@ button
 	background: #3c5499
 	padding-bottom: 60px
 form
-	width: 990px
+	max-width: 990px
+	width: 100%
 	margin: auto
 	color: #fff
 	input
 		display: inline-block
-		width: 400px
+		max-width: 400px
+		width: 85%
 		background: #273a71
 		border: none
 		height: 40px
@@ -243,7 +246,8 @@ form
 		color: inherit
 		text-indent: 20px
 	textarea
-		width: 840px
+		max-width: 840px
+		width: 85%
 		height: 150px
 		margin: 0 20px
 		background: #273a71
@@ -267,13 +271,60 @@ footer
 		font-size: 0
 	li
 		display: inline-block
+		margin: auto
 	a
+		display: inline-block
 		color: #fff
 		font-size: 1.2rem
 		text-transform: capitalize
 		text-decoration: none
-		padding: 40px
+		padding: 10px
 		transition: all .3s
 		&:hover
 			color: #31a1d2
-		
+.menu
+	display: none
+@media screen and (max-width: 800px)
+	.hiden
+		display: none
+	.menu
+		display: inline-block
+		width: 40px
+		height: 40px
+		background: url(http://pepispubngrill.com/img/menu.png)
+		background-size: cover
+		cursor: pointer
+	nav ul
+		position: absolute
+		right: 5%
+		margin-top: 10px
+		width: 90%
+		background: rgba(0, 0, 0, 0.8)
+		border-radius: 10px
+		li
+			display: block
+			text-align: center
+		a
+			width: 100%
+			text-align: center
+			&:hover
+				background: transparent
+				color: $c1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
